@@ -122,5 +122,10 @@ namespace RatonTeclado
         {
             CajaBotonDer.Fill = new SolidColorBrush(System.Windows.Media.Colors.White);
         }
+
+        private void CajaTexto1_LostFocus(object sender, RoutedEventArgs e)
+        {
+            CajaTextoFoco.Text = "";
+        }
     }
 }
