@@ -1,0 +1,33 @@
+﻿<Window x:Class="RatonTeclado.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RatonTeclado"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="128 (1).ico"
+        MouseRightButtonUp="Window_MouseRightButtonUp" MouseLeftButtonUp="Window_MouseLeftButtonUp" MouseRightButtonDown="Window_MouseRightButtonDown" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="276*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="457*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name ="CajaTexto1" HorizontalAlignment="Left" Height="35" Margin="31,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="20" MouseEnter="CajaTexto_MouseEnter" MouseLeave="CajaTexto_MouseLeave" TextChanged="CajaTexto1_TextChanged" GotFocus="CajaTexto1_GotFocus" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="31,58,0,0" TextWrapping="Wrap" Text="TextBox 1" VerticalAlignment="Top" Width="79" FontSize="16" Grid.Column="2"/>
+        <TextBox x:Name ="CajaTexto2" HorizontalAlignment="Left" Height="35" Margin="31,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="20" MouseEnter="CajaTexto_MouseEnter" MouseLeave="CajaTexto_MouseLeave" KeyDown="CajaTexto2_KeyDown" GotFocus="CajaTexto2_GotFocus" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="31,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" FontSize="16" Grid.Column="2"><Run Text="TextBox "/><Run Text="2"/></TextBlock>
+        <TextBox x:Name="CajaTexto3" HorizontalAlignment="Left" Height="35" Margin="31,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" TextChanged="TextBox_TextChanged" FontSize="20" MouseEnter="CajaTexto_MouseEnter" MouseLeave="CajaTexto_MouseLeave" GotFocus="CajaTexto3_GotFocus" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="31,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" FontSize="16" Grid.Column="2"><Run Text="TextBox "/><Run Text="3"/></TextBlock>
+        <TextBox x:Name="CajaTextoFoco" HorizontalAlignment="Left" Height="35" Margin="84,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" TextChanged="TextBox_TextChanged" FontSize="20" Grid.Column="4"  IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="84,83,0,0" TextWrapping="Wrap" Text="Foco" VerticalAlignment="Top" Width="79" FontSize="16" Grid.Column="4"/>
+        <TextBox x:Name="CajaTextoRaton" HorizontalAlignment="Left" Height="35" Margin="84,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" TextChanged="TextBox_TextChanged" FontSize="20" Grid.Column="4"  IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="84,213,0,0" TextWrapping="Wrap" Text="Ratón sobre" VerticalAlignment="Top" Width="98" FontSize="16" Grid.Column="4"/>
+        <TextBlock Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="119,334,0,0" TextWrapping="Wrap" Text="Botones" VerticalAlignment="Top" Width="113" FontSize="18"/>
+        <Rectangle x:Name ="CajaBotonDer" Grid.Column="4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="54" Margin="216,334,0,0" Stroke="Black" VerticalAlignment="Top" Width="74" MouseEnter="CajaTexto_MouseEnter" MouseLeave="CajaTexto_MouseLeave"/>
+        <Rectangle x:Name ="CajaBotonIzq" Grid.Column="4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="54" Margin="324,334,0,0" Stroke="Black" VerticalAlignment="Top" Width="74" MouseEnter="CajaTexto_MouseEnter" MouseLeave="CajaTexto_MouseLeave"/>
+
+    </Grid>
+</Window>
